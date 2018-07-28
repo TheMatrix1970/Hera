@@ -34,17 +34,17 @@ After the MN is up and running, you need to configure the desktop wallet accordi
 15. Select your masternode and click on **Start**
 16. Login to your VPS and check your masternode status by running the following command. If you get **Status 9**, it means your masternode is active.
 ```
-Herad masternode status
+su - USER_USE_IN_INSTALL_SCRIPT -c 'masternode status'
 ```
 ***
 
 ## Usage:
 
-Change MN01 for the user 
+Change USER_USE_IN_INSTALL_SCRIPT for the user 
 
 ```
-su - MN01 -c 'masternode status'
-su - MN01 -c 'Herad getinfo'
+su - USER_USE_IN_INSTALL_SCRIPT -c 'masternode status'
+su - USER_USE_IN_INSTALL_SCRIPT -c 'Herad getinfo'
 ```
 Also, if you want to check/start/stop **Hera**, run one of the following commands as **root**:
 
