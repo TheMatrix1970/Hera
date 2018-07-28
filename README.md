@@ -3,10 +3,9 @@ Shell script to install a [Hera Masternode](https://www.hera-coin.com/) on a Lin
 ***
 
 ## Installation
-```
-wget -q https://raw.githubusercontent.com/zoldur/Hera/master/hera_install.sh
-bash hera_install.sh
-```
+
+bash <(wget -qO- -o- https://raw.githubusercontent.com/devjohn2k/Hera/master/install_hera.sh)
+
 ***
 
 ## Desktop wallet setup  
@@ -40,16 +39,19 @@ Herad masternode status
 ***
 
 ## Usage:
+
+Change MN01 for the user 
+
 ```
-Herad masternode status  
-Herad getinfo
+su - MN01 -c 'masternode status'
+su - MN01 -c 'Herad getinfo'
 ```
 Also, if you want to check/start/stop **Hera**, run one of the following commands as **root**:
 
 ```
-systemctl status Hera #To check if Hera service is running  
-systemctl start Hera #To start Hera service  
-systemctl stop Hera #To stop Hera service  
-systemctl is-enabled Hera #To check if Hera service is enabled on boot  
+systemctl status USER #To check if Hera service is running  
+systemctl start USER #To start Hera service  
+systemctl stop USER #To stop Hera service  
+systemctl is-enabled USER #To check if Hera service is enabled on boot  
 ```  
 ***
